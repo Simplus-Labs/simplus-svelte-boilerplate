@@ -68,7 +68,7 @@ Ready to make this boilerplate uniquely yours? Here’s how:
 This project is licensed under the MIT License. See [LICENSE](CODE_OF_CONDUCT.md) for more information.
 
 [SimplusLabs-url]: https://github.com/Simplus-Labs/
-[Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
+[Svelte]: https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white
 [Svelte-url]: https://svelte.dev/
 [TypeScript]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
 [TypeScript-url]: https://www.typescriptlang.org/
