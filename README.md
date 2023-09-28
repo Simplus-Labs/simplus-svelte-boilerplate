@@ -1,47 +1,86 @@
-# Svelte + TS + Vite
+> 🌐 [¿No hablas inglés? Haz clic aquí para la versión en español.](docs/README-ES.md)
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+<h1 align="center">🛠 Simplus React Boilerplate 🛠</h1>
 
-## Recommended IDE Setup
+<p align="center">
+  <a href="#tech-stack--features">🌟 <strong>Features</strong></a> ·
+  <a href="#tech-stack--features">🧰 <strong>Tech Stack</strong></a> ·
+  <a href="#customize-to-your-needs">✨ <strong>Customize</strong></a>
+</p>
+<br/>
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+<img src="docs/SimplusToolbox.png" style="height: 384px"/>
 
-## Need an official Svelte framework?
+## 🌟 Features
+- 🛠 **Consistent Design for Simplus Toolbox**: A design structure ensuring coherence across all tools from Simplus Toolbox.
+- 📱 **Responsive Layout**: Designed to look and function seamlessly on devices of all sizes.
+- 🎨 **Quick Theme Switching**: Rapidly change the look of your tool by selecting from a range of custom themes.
+- 💻 **Code Standardization and Quality**: Maintain clean and consistent code with leading tools like ESLint, Prettier, and Commitlint.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## 🧰 Tech Stack
 
-## Technical considerations
+- [![Svelte][Svelte]][Svelte-url]
+- [![TypeScript][TypeScript]][TypeScript-url]
+- [![ShadcnUI][ShadcnUI]][ShadcnUI-url]
+- [![Tailwind][Tailwind]][Tailwind-url]
+- [![Commitlint][Commitlint]][Commitlint-url]
+- [![ESLint][ESLint]][ESLint-url]
+- [![Prettier][Prettier]][Prettier-url]
+- [![Vite][Vite]][Vite-url]
 
-**Why use this over SvelteKit?**
+## ✨ Customize
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+Ready to make this boilerplate uniquely yours? Here’s how:
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+1. **Meta Information**: Start by personalizing the project's identity.
+   - 📝 Navigate to the `index.html` file.
+   - 🖋 Update all title and meta tags to match your tool's name, description, and other details.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+2. **Theme Adaptation**: Shape the visual experience of your tool.
+   - 🎨 Set your desired theme by modifying the `<body>` tag.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```html
+<body class="yellow-gradient">
+  <div id="root"></div>
+</body>
 ```
+
+3. **Choose from Our Themes**: Whether you’re after a minimalist gray or a vibrant rose, we’ve got you covered. Select from a rich palette of themes tailored for a seamless user experience.
+
+### 🎨 List of themes
+
+| Theme  | Class | Preview |
+| ------------- | ------------- | ------------- |
+| Zinc | zinc-gradient | ![zinc-gradient](docs/zinc-gradient.svg)  |
+| Slate | slate-gradient | ![slate-gradient](docs/slate-gradient.svg) |
+| Stone | stone-gradient | ![stone-gradient](docs/stone-gradient.svg) |
+| Gray | gray-gradient | ![gray-gradient](docs/gray-gradient.svg) |
+| Neutral | neutral-gradient | ![neutral-gradient](docs/neutral-gradient.svg) |
+| Red | red-gradient | ![red-gradient](docs/red-gradient.svg) |
+| Rose | rose-gradient | ![rose-gradient](docs/rose-gradient.svg) |
+| Green | green-gradient | ![green-gradient](docs/green-gradient.svg) |
+| Blue | blue-gradient | ![blue-gradient](docs/blue-gradient.svg) |
+| Yellow | yellow-gradient | ![yellow-gradient](docs/yellow-gradient.svg) |
+| Violet | violet-gradient | ![violet-gradient](docs/violet-gradient.svg) |
+
+## 📜 License
+
+This project is licensed under the MIT License. See [LICENSE](CODE_OF_CONDUCT.md) for more information.
+
+[SimplusLabs-url]: https://github.com/Simplus-Labs/
+[Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
+[Svelte-url]: https://svelte.dev/
+[TypeScript]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[ShadcnUI]: https://img.shields.io/badge/ShadcnUI-000000.svg?style=for-the-badge&logo=ShadcnUI&logoColor=white
+[ShadcnUI-url]: https://shadcn-svelte.com/
+[Tailwind]: https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[Vite]: https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://vitejs.dev/
+[Commitlint]: https://img.shields.io/badge/commitlint-000000.svg?style=for-the-badge&logo=commitlint&logoColor=white
+[Commitlint-url]: https://commitlint.js.org/
+[ESLint]: https://img.shields.io/badge/ESLint-4B32C3.svg?style=for-the-badge&logo=ESLint&logoColor=white
+[ESLint-url]: https://eslint.org/
+[Prettier]:https://img.shields.io/badge/Prettier-F7B93E.svg?style=for-the-badge&logo=Prettier&logoColor=black
+[Prettier-url]: https://prettier.io/
